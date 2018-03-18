@@ -1,0 +1,206 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[top=2cm, bottom=0.5cm, left=1.5cm, right=1.5cm]{geometry}
+    \usepackage[hidelinks]{hyperref}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\urlstyle{same}
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{degrees}{
+    \small
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+\newenvironment{myitemize}
+{   \small
+    \vspace{-2pt}
+    \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}     }
+{ \end{itemize}                  } 
+
+\newenvironment{singleitem}
+{   \small
+    \vspace{-2.6pt}
+    \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}   }
+{\end{itemize} \vspace{-2.6pt}	}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-50pt}
+
+    
+
+%==== Profile ====%
+\begin{center}
+	{\Huge \scshape {Nicholas Lambourne}}\\
+	Brisbane QLD, Australia $\cdot$ nick@ndl.im $\cdot$ (646) 492 3993 $\cdot$ \href{https://ndl.im}{ndl.im}\\
+\end{center}
+
+%==== Education ====%
+\vspace{-1mm}
+\header{Education}
+\textbf{The University of Queensland}\hfill St Lucia QLD, Australia\\
+\begin {degrees}
+Bachelor of Engineering (Hons) (Software Engineering) \hfill Feb 2016 - Jun 2020\\
+Bachelors of Commerce/Science (Finance \& Psychology) \hfill Class of 2015\\
+\end{degrees}
+\vspace{1mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{ADLED Pty. Ltd.} \hfill Cleveland, QLD\\
+\textit{Technical Advisor} \hfill Jun 2016 - Dec 2017\\
+\begin{myitemize} \itemsep 0.8mm
+	\item Managed technical aspects of a network of LED billboards across South-East Queensland.
+	\item Developed and maintained an online resource monitoring portal for the LED network.
+	\item Provided financial reporting to investors and industry bodies.
+	\item Worked with industry groups to lobby local governments on legislative issues.
+	\item Consulted with CEO \& Directors on company technical and financial policy.
+\end{myitemize}
+\textbf{SS Signs} \hfill Cleveland, QLD\\
+\textit{Technical Advisor} \hfill Oct 2015 - Jun 2016\\
+\begin{myitemize} \itemsep 0.8mm
+	\item Led technical documentation and training efforts for various LED billboard systems.
+	\item Oversaw the development of a boutique content management system (CMS).
+	\item Headed an extensive technical and financial review of CMS systems.
+	\item Developed and deployed software to increase advertising impressions by controlling the rotation of large-format LED billboards to face oncoming traffic at different times of day.
+\end{myitemize}
+
+\vspace{-1mm}
+\header{Skills}
+\textbf{Programming Languages}
+\begin{tabular}{p{0.25\linewidth}p{0.7\linewidth}}
+	\small Familiar: & \small Python, Java, C, Javascript, SQL, \LaTeX, HTML, CSS \\
+	\small Encountered: & \small Matlab, Ruby, Atmel AVR.   \\
+	\small Learning:   & \small Go, SML\vspace{2mm}                                          \\	
+\end{tabular}
+
+\textbf{Tools, Libraries, Frameworks, Concepts \& Platforms}
+\begin{tabular}{p{0.25\linewidth}p{0.7\linewidth}}
+	\small Familiar: & \small VCS (Git, SVN), Web Frameworks (Django, Flask, ExpressJS), NodeJS, Unit Testing, OOP, MVC, Jupyter, REST APIs, JetBrains IDEs, Vim \\
+	\small Encountered: & \small Apache, nginx, PostgreSQL, MySQL, Network Programming, Concurrency, NoSQL, CI/CD (Jenkins), Wordpress, Agile, TDD, AWS  \\
+	\small Learning: & \small ReactJS, Redux, GraphQL \\
+\end{tabular}
+
+\vspace{2mm}
+
+
+\vspace{1mm}
+
+\header{Projects}
+\vspace{1mm}
+\textbf{\href{https://ndl.im}{ndl.im} (\href{https://github.com/nicklambourne/personal}{https://github.com/nicklambourne/personal})}
+\begin{singleitem}
+	\item Personal website built using NodeJS, ExpressJS and MongoDB with an automated build pipeline and Jenkins for CI/CD, hosted on Heroku.
+\end{singleitem}
+
+\textbf{\href{https://uqcs.org.au}{uqcs.org.au} (\href{https://github.com/uqcomputingsociety/website}{https://github.com/uqcomputingsociety/website})}
+\begin{singleitem}
+	\item Contributed to the visual overhaul of the computing society website (Ruby/Jekyll) and fixed various bugs.
+\end{singleitem}
+
+\textbf{uqcsbot (\href{https://github.com/UQComputingSociety/uqcsbot}{https://github.com/UQComputingSociety/uqcsbot})}
+\begin{singleitem}
+	\item Contributed new scripts and script overhauls to the society's Slack bot, written in Javascript.
+\end{singleitem}
+
+\textbf{adled.io (Proprietary/Closed Source)}
+\begin{singleitem}
+	\item Built a proof-of-concept web portal for monitoring the LED billboard network. Used various APIs to provide real-time status monitoring and live video feeds. Built using Python, Django, PostgreSQL. Hosted on DigitalOcean using Gunicorn and nginx.
+\end{singleitem}
+
+\textbf{LED Billboard Rotation System (Proprietary/Closed Source)}
+\begin{singleitem}
+	\item Developed and deployed an embedded system for controlling the rotation of a large-format LED billboard. It used a daemonized Python process running on a Unix-based device and was later upgraded to include a GUI element and concurrency-based features.
+\end{singleitem}
+
+\vspace{1mm}
+
+\header{Volunteering}
+\vspace{1mm}
+\textbf{Node Girls/Django Girls - Brisbane Chapters} \hfill 2017 - Present\\
+\begin{singleitem}
+	\item Provided mentorship in web technologies in an effort to increase female representation in technology.
+\end{singleitem}
+\textbf{Robogals - University of Queensland Branch} \hfill 2016 - Present\\
+\begin{singleitem}
+	\item Demonstrated for and mentored students in robotics, engineering and gender representation.
+\end{singleitem}
+\textbf{University of Queensland Computing Society} \hfill 2015 - Present\\
+\begin{singleitem}
+	\item Active member of the society, giving lightning talks, attending and assisting with events and competitions.
+\end{singleitem}
+
+\vspace{1mm}
+
+\header{Awards}
+\textbf{Dean\textquotesingle{}s Commendation for Academic Achievement} \hfill The University of Queensland\\
+
+\vspace{1mm}
+
+\begin{center}
+\small \textit{References available on request}
+\end{center}
+
+\end{document}
