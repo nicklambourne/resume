@@ -5,7 +5,7 @@
     \usepackage{textcomp}
     \usepackage[utf8]{inputenc}
     \usepackage[T1]{fontenc}
-    \usepackage[top=2.5cm, bottom=0cm, left=2cm, right=1.5cm]{geometry}
+    \usepackage[top=3cm, bottom=0cm, left=1.5cm, right=1.2cm]{geometry}
     \usepackage[hidelinks]{hyperref}
     \textheight=10in
     \pagestyle{empty}
@@ -26,11 +26,11 @@
 
 \newcommand{\lineunder} {
     \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \\
+    \hspace*{-10pt} \hrulefill \\
 }
 
 \newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    {\hspace*{-10pt}\vspace*{6pt} \textsc{#1}}
     \vspace*{-6pt} \lineunder
 }
 
@@ -49,12 +49,6 @@
 
 \newenvironment{degrees}{
     \small
-}
-
-\newcommand{\schoolwithcourses} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-    \vspace*{5pt}
 }
 
 \newcommand{\school} [4] {
@@ -82,7 +76,7 @@
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\vspace*{-48pt}
+\vspace*{-62pt}
 
     
 
@@ -97,7 +91,7 @@
 \header{Education}
 \textbf{The University of Queensland}\hfill St Lucia QLD, Australia\\
 \begin {degrees}
-Bachelor of Engineering (Hons) (Software Engineering) \hfill Feb 2016 - Dec 2019\\
+Bachelor of Engineering (Hons) (Software Engineering) \hfill Feb 2016 - June 2020\\
 Bachelors of Commerce/Science (Finance \& Psychology) \hfill Class of 2015\\
 \end{degrees}
 \vspace{1mm}
@@ -105,51 +99,55 @@ Bachelors of Commerce/Science (Finance \& Psychology) \hfill Class of 2015\\
 %==== Experience ====%
 \header{Experience}
 
-\textbf{ADLED Pty. Ltd.} \hfill Cleveland, QLD\\
-\textit{Technical Advisor} \hfill Jun 2016 - Dec 2017\\
+\textbf{The University of Queensland - Faculty of Engineering, Architecture \& IT} \hfill St Lucia, QLD\\
+\textit{Tutor} \hfill Jul 2018 - Present\\
+\begin{myitemize} \itemsep 0.75mm
+	\item Responsible for several teams of first-year engineering students taking the course \textit{Engineering Modelling and Problem Solving} in which they utilise industry tools like CREO and Matlab to design, build and test a model glider.
+	\item In addition to supervising students in practical sessions, I am also responsible for marking student assignments and facilitating various other forms of assessment.
+\end{myitemize}
+\vspace{-1mm}
+\textbf{The University of Queensland - Social Robotics Lab} \hfill St Lucia, QLD\\
+\textit{Winter Research Scholar} \hfill Jun 2018 - Jul 2018\\
+\begin{myitemize} \itemsep 0.75mm
+	\item Worked in an interdisciplinary team with linguists and engineers to produce software for the Ngukurr OPIE Social Robot project (see Hermes, below) which was later transferred to the ARC Centre of Excellence for the Dynamics of Language.
+	\item Produced an academic poster with fellow winter scholars for use at conferences demonstrating our work.
+\end{myitemize}
+\vspace{-1mm}
+\textbf{ADLED Pty. Ltd. \& SS Signs} \hfill Cleveland, QLD\\
+\textit{Technical Advisor} \hfill Oct 2015 - Dec 2017\\
 \begin{myitemize} \itemsep 0.75mm
 	\item Managed technical aspects of a network of LED billboards across South-East Queensland.
-	\item Developed and maintained a real-time online resource monitoring portal for the LED network.
-	\item Compiled and provided financial reports for investors and industry bodies.
-	\item Worked with industry groups to lobby local governments on legislative issues.
-\end{myitemize}
-\textbf{SS Signs} \hfill Cleveland, QLD\\
-\textit{Technical Advisor} \hfill Oct 2015 - Jun 2016\\
-\begin{myitemize} \itemsep 0.75mm
-	\item Led technical documentation and training efforts for various LED billboard systems.
-	\item Oversaw the development of a boutique content management system (CMS).
+	\item Developed and maintained a real-time online resource monitoring portal for the LED network (see projects, below).
+	\item Compiled financial reports and worked with industry groups to lobby local governments on legislative issues.
 	\item Headed an extensive technical and financial review of CMS systems.
-	\item Developed and deployed software to increase advertising impressions by controlling the rotation of large-format LED billboards to face oncoming traffic at different times of day.
+	\item Developed software to control the rotation of LED billboards to face oncoming traffic (see projects, below).
 \end{myitemize}
 
 \vspace{-1mm}
 \header{Skills}
 \textbf{Programming Languages}
-\begin{tabular}{p{0.25\linewidth}p{0.7\linewidth}}
+\begin{tabular}{p{0.20\linewidth}p{0.75\linewidth}}
 	\small Familiar: & \small Python, Java, C, JavaScript, SQL, \LaTeX, HTML/CSS \\
 	\small Encountered: & \small Matlab, Ruby, AVR Assembly, SML, Smalltalk, Prolog\\
 \end{tabular}
 \textbf{Other Skills}
-\begin{tabular}{p{0.25\linewidth}p{0.7\linewidth}}
-	\small Tools: & \small VCS (Git, SVN), Web Frameworks (Django, Flask, ExpressJS), NodeJS,  Jupyter, REST APIs, Linux Environments (Ubuntu), Web Servers (nginx, Apache), SQL DBs (PostgreSQL, MySQL), NoSQL (MongoDB), CI/CD (Jenkins), Wordpress \\
-	\small Platforms: & \small AWS (EC2, S3, Elastic Beanstalk), Heroku  \\
+\begin{tabular}{p{0.20\linewidth}p{0.75\linewidth}}
+	\small Tools: & \small VCS (Git, SVN), Web Frameworks (Django, Flask, ExpressJS), NodeJS,  Jupyter, REST APIs, Linux (Ubuntu), Web Servers (nginx, Apache), SQL DBs (PostgreSQL, MySQL), NoSQL (MongoDB), CI/CD (Jenkins), Wordpress, Cloud Platforms (AWS EC2, S3, EB; Heroku)
 \end{tabular}
-
-\vspace{1mm}
-
 
 \vspace{1mm}
 
 \header{Projects}
 \vspace{1mm}
+
+\textbf{{Hermes - The Language Resource Creator} (\href{https://github.com/nicklambourne/elan2resource}{https://github.com/nicklambourne/elan2resource})}
+\begin{singleitem}
+	\item As part of the UQ Winter Research Scholarship I developed a cross-platform Python application, using the Qt GUI library, for creating language resources from ELAN linguistic analysis files and associated media.
+\end{singleitem}
+
 \textbf{\href{https://ndl.im}{ndl.im} (\href{https://github.com/nicklambourne/personal}{https://github.com/nicklambourne/personal})}
 \begin{singleitem}
 	\item Personal website built using NodeJS, ExpressJS and MongoDB with an automated build pipeline and Jenkins for CI/CD, hosted on Heroku.
-\end{singleitem}
-
-\textbf{{ELAN Language Resource Creator} (\href{https://github.com/nicklambourne/elan2resource}{https://github.com/nicklambourne/elan2resource})}
-\begin{singleitem}
-	\item As part of the UQ Winter Research Scholarship I developed a cross-platform Python application, using the Qt GUI library, for creating language resources from ELAN linguistic analysis files and associated media files.
 \end{singleitem}
 
 \textbf{uqcsbot (\href{https://github.com/UQComputingSociety/uqcsbot}{https://github.com/UQComputingSociety/uqcsbot})}
@@ -157,9 +155,9 @@ Bachelors of Commerce/Science (Finance \& Psychology) \hfill Class of 2015\\
 	\item Contributed new scripts and script overhauls to the society's Slack bot, originally written in JavaScript and later ported to Python.
 \end{singleitem}
 
-\textbf{adled.io (Proprietary/Closed Source)}
+\textbf{adled-io (Proprietary/Closed Source)}
 \begin{singleitem}
-	\item Built a proof-of-concept web portal for monitoring an LED billboard network. Used various APIs to provide real-time status monitoring and live video feeds. Built using Python, Django, PostgreSQL. Hosted on DigitalOcean using Gunicorn and nginx.
+	\item Built a proof-of-concept web portal for monitoring an LED billboard network. Used various APIs to provide real-time status monitoring and live video feeds. Built using Python, Django, PostgreSQL. Hosted on a VPS using Gunicorn/nginx.
 \end{singleitem}
 
 \textbf{LED Billboard Rotation System (Proprietary/Closed Source)}
@@ -167,32 +165,28 @@ Bachelors of Commerce/Science (Finance \& Psychology) \hfill Class of 2015\\
 	\item Developed a system for controlling the rotation of a large-format LED billboard. It used a daemonized Python process running on a Unix-based device. Later upgraded to include a GUI element and concurrency-based features.
 \end{singleitem}
 
+\vspace{1mm}
+
 \header{Volunteering}
-\textbf{Node Girls/Django Girls - Brisbane Chapters} \hfill 2017 - Present\\
+\textbf{Node Girls/Django Girls/Robogals - Brisbane Chapters} \hfill 2017 - Present\\
 \begin{singleitem}
-	\item Provided mentorship in web technologies in an effort to increase female representation in technology.
-\end{singleitem}
-\textbf{Robogals - University of Queensland Branch} \hfill 2016 - Present\\
-\begin{singleitem}
-	\item Demonstrated for and mentored students in robotics, engineering and gender representation.
+	\item Provided mentorship in web and robotics technologies in an effort to increase female representation in technology.
 \end{singleitem}
 \textbf{University of Queensland Computing Society} \hfill 2015 - Present\\
 \begin{singleitem}
 	\item I have given lightning talks, assisted with events and contributed to open source projects (websites, Slack bots etc.).
 \end{singleitem}
-\textbf{YOW! Conference} \hfill 2017\\
+\textbf{YOW! Developer Conference} \hfill 2017-Present\\
 \begin{singleitem}
 	\item Participated as a student volunteer assisting with conference organisation and preparation.
 \end{singleitem}
-
-\vspace{1mm}
 
 \header{Awards}
 \textbf{UQ Winter Research Scholarship} \hfill The University of Queensland\\
 \textbf{Dean\textquotesingle{}s Commendation for Academic Achievement} \hfill The University of Queensland\\
 \textbf{UConn Innovation Quest - Finalist} \hfill The University of Connecticut\\
 
-\vspace{-1mm}
+\vspace{3mm}
 \begin{center}
 \small \textit{References available on request}
 \end{center}
