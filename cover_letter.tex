@@ -1,10 +1,79 @@
-\documentclass[a4paper]{scrlttr2}
-	\usepackage{fullpage}
-	\usepackage[T1]{fontenc}
-	\usepackage[top=2cm, bottom=0.5cm, left=1.5cm, right=1.5cm]{geometry}
-   	\usepackage[hidelinks]{hyperref}
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[top=3cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+    \usepackage[hidelinks]{hyperref}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
 
-% DEFINITIONS %
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\urlstyle{same}
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-10pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-10pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{degrees}{
+    \small
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+\newenvironment{myitemize}
+{   \small
+    \vspace{-2pt}
+    \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}     }
+{ \end{itemize}                  } 
+
+\newenvironment{singleitem}
+{   \small
+    \vspace{-2.6pt}
+    \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}   }
+{\end{itemize} \vspace{-2.6pt}	}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -23,27 +92,32 @@
 
 \vspace{30pt}
 
-18 April 2018
+6 August 2018
 
 \vspace{40pt}
 
-[Company Name]
+Commonwealth Scientific and Industrial Research Organisation
 
-[123 Company Street]
+Clunies Ross Street
 
-[Town STATE Zip Code]
+Black Mountain ACT 2601
 
-[Country]
-
-\vspace{40pt}
-
-Dear [Mr/Mrs Recruiter],
+Australia
 
 \vspace{40pt}
 
-[PARAGRAPH 1] \\
+Dear Hiring Manager,
 
-[PARAGRAPH 2] \\
+\vspace{40pt}
+
+My name is Nicholas Lambourne and I am a third year undergraduate student at the University of Queensland studying software engineering. \\
+
+\vspace{12pt}
+
+I believe that my technical and educational and professional background uniquely position me . During the first semester of 2018 I participated in an exhange program at the University of Connecticut (UConn).
+ I chose Connecticut first and foremost because they offered a graduate class in Quantum Computing, taught by Assistant Professor Walter Krawec and had confirmed that I would be able to particpate in the course in an audit capacity
+
+My experience in both academic research and industry environments
 
 [PARAGRAPH 3]
 
