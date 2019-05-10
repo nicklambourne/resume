@@ -67,16 +67,16 @@
 
 \newenvironment{singleitem}
 {   \small
-    \vspace{-2.6pt}
+    \vspace{0pt}
     \begin{itemize}
     \setlength{\itemsep}{0pt}
     \setlength{\parskip}{0pt}
     \setlength{\parsep}{0pt}   }
-{\end{itemize} \vspace{-2.6pt}	}
+{\end{itemize} \vspace{2pt}	}
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\vspace*{-79pt}
+\vspace*{-70pt}
 
 %==== Profile ====%
 \begin{center}
@@ -85,34 +85,33 @@
 \end{center}
 
 %==== Education ====%
-\vspace{-3mm}
 \header{Education}
 \textbf{The University of Queensland}\hfill St Lucia, QLD, Australia\\
 \begin {degrees}
 Bachelor of Engineering (Hons) (Software Engineering) \hfill Feb 2016 - Nov 2020\\
-Bachelors of Commerce/Science (Finance \& Psychology) \hfill Class of 2015\\
+Bachelors of Commerce/Science (Finance \& Psychology) \hfill Graduated 2015\\
 \end{degrees}
 %\textbf{The University Edinburgh}\hfill Edinburgh, Scotland, United Kingdom\\
 %\begin {degrees}
 %Exchange Studies (Informatics) \hfill Sep 2019 - Dec 2019\\
 %\end{degrees}
-%\textbf{The University of Connecticut}\hfill Storrs, Connecticut, United States of America\\
-%\begin {degrees}
-%Exchange Studies (Computer Science) \hfill Jan 2018 - May 2018\\
-%\end{degrees}
+\textbf{The University of Connecticut}\hfill Storrs, CT, United States\\
+\begin {degrees}
+Exchange Studies (Computer Science) \hfill Jan 2018 - May 2018\\
+\end{degrees}
 %\vspace{1mm}
 
 %==== Experience ====%
+\vspace{4mm}
 \header{Experience}
 
-\textbf{The University of Queensland - Complex and Intelligent Systems Group} \hfill St Lucia, QLD\\
+\textbf{The University of Queensland - Complex \& Intelligent Systems Group} \hfill St Lucia, QLD\\
 \textit{Research Assistant} \hfill Jun 2018 - Present\\
-\vspace{-0.5mm}
 \begin{myitemize} \itemsep 0.5mm
-	\item Part of an interdisciplinary team of linguists and engineers producing software for the Ngukurr OPIE Social Robot Project (see Hermes, below). Conducted tutorials and created an academic poster demonstrating the produced software.
-	\item Contributed to the Transcription Acceleration Project through work abstracting away the complexity of the Kaldi Automatic Speech Recognition library. Originally only a CLI toolkit, a GUI is currently being developed (\href{https://github.com/CoEDL/elpis}{Elpis}).
+	\item Contributed to the development of \href{https://github.com/CoEDL/elpis}{Elpis}, abstracting away the complexity of the Kaldi Automatic Speech Recognition library. Our team took a CLI toolkit and developed a GUI with React and Flask.
+	\item Developed software for the Ngukurr OPIE Social Robot Project (see Hermes, below). 
+	
 \end{myitemize}
-\vspace{-1mm}
 \textbf{The University of Queensland - Faculty of Engineering, Architecture \& IT} \hfill St Lucia, QLD\\
 \textit{Teaching Assistant} \hfill Jul 2018 - Present\\
 \vspace{-0.5mm}
@@ -120,35 +119,35 @@ Bachelors of Commerce/Science (Finance \& Psychology) \hfill Class of 2015\\
 	\item Led tutorials and supervised practicals for the course \textit{Programming in the Large}, where students are taught Java, object-oriented programming and the fundamentals of GUI development.
 	\item Responsible for several teams of first-year engineering students taking the course \textit{Engineering Modelling and Problem Solving} in which they utilise industry tools including CREO and Matlab to design, build and test a model UAV.
 \end{myitemize}
-\vspace{-1mm}
+
 \textbf{Patchd, Inc.} \hfill San Francisco, CA\\
 \textit{Software Engineering Intern} \hfill  Jan 2019 - Feb 2019\\
-\vspace{-0.5mm}
 \begin{myitemize} \itemsep 0.5mm
-	\item Worked at a Y-Combinator backed startup on parallelisation strategies for the training of recurrent neural networks for the detection of sepsis from vital sign data. Also introduced elements of software engineering best-practice to the firm.
+	\item Patchd is a Y-Combinator backed startup working on the detection of sepsis from vital sign data using ML.
+	\item I worked on parallelisation strategies for training RNNs and introduced elements of software engineering best practice.
 \end{myitemize}
-\vspace{-1mm}
-\textbf{ADLED Pty. Ltd. \& SS Signs} \hfill Cleveland, QLD\\
-\textit{Technical Advisor} \hfill Oct 2015 - Dec 2017\\
-\vspace{-0.5mm}
-\begin{myitemize} \itemsep 0.5mm
-	\item Developed software to monitor a network of LED billboards and control the rotation of certain installations (see projects).
-	\item Compiled financial reports and worked with industry groups to lobby local governments on legislative issues.
-\end{myitemize}
+%\textbf{ADLED Pty. Ltd. \& SS Signs} \hfill Cleveland, QLD\\
+%\textit{Technical Advisor} \hfill Oct 2015 - Dec 2017\\
+%\vspace{-0.5mm}
+%\begin{myitemize} \itemsep 0.5mm
+%	\item Developed software to monitor a network of LED billboards and control the rotation of certain installations (see projects).
+%	\item Compiled financial reports and worked with industry groups to lobby local governments on legislative issues.
+%\end{myitemize}
 
-\vspace{-2mm}
+\vspace{2mm}
 \header{Skills}
-\textbf{Programming Languages}
-\begin{tabular}{p{0.15\linewidth}p{0.80\linewidth}}
-	\small Familiar: & \small Python, Java, C, JavaScript, SQL, \LaTeX, HTML/CSS \\
-	\small Encountered: & \small MATLAB, Ruby, AVR Assembly, SML, Smalltalk, Prolog\\
-\end{tabular}
-\textbf{Other Skills}
-\begin{tabular}{p{0.15\linewidth}p{0.80\linewidth}}
-	\small Tools: & \small VCS (Git, SVN), Web Frameworks (Django, Flask, ExpressJS), NodeJS,  Jupyter, REST APIs, Unix (Ubuntu), Web Servers (nginx, Apache), SQL DBs (PostgreSQL, MySQL), NoSQL (MongoDB), CI/CD (Jenkins), Wordpress, Cloud Platforms (AWS EC2, S3, EB; Heroku), Machine Learning (Tensorflow)
+%\textbf{Programming Languages}
+\vspace{1.5mm}
+\begin{tabular}{p{0.12\linewidth}p{0.83\linewidth}}
+	\textbf{Languages:} & Python, Java, C, JavaScript, SQL, \LaTeX, HTML/CSS \\
+%	\small Encountered: & \small MATLAB, Ruby, AVR Assembly, SML, Smalltalk, Prolog\\
+%\end{tabular}
+%\textbf{Other Skills}
+%\begin{tabular}{p{0.15\linewidth}p{0.80\linewidth}}
+	\textbf{Tools:} & Web Frameworks (Django, Flask, ExpressJS), SQL DBs (PostgreSQL, MySQL), NoSQL (Mongo), CI/CD (Jenkins), Cloud Platforms, Containerisation (Docker)
 \end{tabular}
 
-\vspace{0mm}
+\vspace{4mm}
 
 \header{Projects}
 
@@ -162,10 +161,10 @@ Bachelors of Commerce/Science (Finance \& Psychology) \hfill Class of 2015\\
 	\item Developed a cross-platform Python/Qt application for creating language resources from linguistic analysis files.
 \end{singleitem}
 
-\textbf{\href{https://ndl.im}{ndl.im} (\href{https://github.com/nicklambourne/personal}{https://github.com/nicklambourne/personal})}
-\begin{singleitem}
-	\item Personal website built using NodeJS, ExpressJS and MongoDB with an automated build pipeline and Jenkins for CI/CD.
-\end{singleitem}
+%\textbf{\href{https://ndl.im}{ndl.im} (\href{https://github.com/nicklambourne/personal}{https://github.com/nicklambourne/personal})}
+%\begin{singleitem}
+%	\item Personal website built using NodeJS, ExpressJS and MongoDB with an automated build pipeline and Jenkins for CI/CD.
+%\end{singleitem}
 
 \textbf{uqcsbot (\href{https://github.com/UQComputingSociety/uqcsbot}{https://github.com/UQComputingSociety/uqcsbot})}
 \begin{singleitem}
@@ -182,7 +181,7 @@ Bachelors of Commerce/Science (Finance \& Psychology) \hfill Class of 2015\\
 	\item Python system for controlling the rotation of large-format LED billboards including GUI and concurrency-based features.
 \end{singleitem}
 
-\vspace{0mm}
+\vspace{4mm}
 
 \header{Volunteering}
 \textbf{University of Queensland Computing Society} \hfill 2014 - Present\\
@@ -194,10 +193,12 @@ Bachelors of Commerce/Science (Finance \& Psychology) \hfill Class of 2015\\
 \begin{singleitem}
 	\item Provided mentorship in web and robotics technologies in an effort to increase female representation in technology.
 \end{singleitem}
-\textbf{YOW! Developer Conferences} \hfill 2017 - Present\\
-\begin{singleitem}
-	\item Participated as a student volunteer assisting with conference organisation and preparation.
-\end{singleitem}
+%\textbf{YOW! Developer Conferences} \hfill 2017 - Present\\
+%\begin{singleitem}
+%	\item Participated as a student volunteer assisting with conference organisation and preparation.
+%\end{singleitem}
+
+\vspace{4mm}
 
 \header{Scholarships, Grants \& Prizes}
 \textbf{UQ IdeaHub San Francisco Startup Adventure Participant} \hfill The University of Queensland (2019)\\
@@ -206,12 +207,12 @@ Bachelors of Commerce/Science (Finance \& Psychology) \hfill Class of 2015\\
 \textbf{UQ Winter Research Scholarship} \hfill The University of Queensland (2018)\\
 \textbf{University of Connecticut Innovation Quest - Finalist} \hfill The University of Connecticut (2018)\\
 \textbf{UQ Abroad Travel Grant (University of Connecticut)} \hfill The University of Queensland (2018)\\
-\textbf{Dean\textquotesingle{}s Commendation for Academic Achievement} \hfill The University of Queensland (2011)\\
+%\textbf{Dean\textquotesingle{}s Commendation for Academic Achievement} \hfill The University of Queensland (2011)\\
 
 
 \vspace{3mm}
 \begin{center}
-\small \textit{References available on request}
+\small \textit{References available upon request}
 \end{center}
 
 \end{document}
