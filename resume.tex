@@ -5,10 +5,11 @@
     \usepackage{textcomp}
     \usepackage[utf8]{inputenc}
     \usepackage[T1]{fontenc}
-    \usepackage[top=3cm, bottom=0.5cm, left=1.5cm, right=1.3cm]{geometry}
+    \usepackage[top=3cm, bottom=0.5cm, left=1.6cm, right=1.5cm]{geometry}
     \usepackage[hidelinks]{hyperref}
     \textheight=10in
     \pagestyle{empty}
+    \usepackage{enumitem}
     \raggedright
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
@@ -88,17 +89,22 @@
 \header{Education}
 \textbf{The University of Queensland}\hfill Brisbane, QLD, Australia\\
 \begin {degrees}
-Bachelor of Engineering (Hons) (Software Engineering) \hfill Feb 2016 - Jul 2021\\
+Bachelor of Science (Computer Science) \hfill Feb 2016 - Dec 2020\\
+\begin{itemize}[noitemsep,topsep=0pt]
+	\setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+	\item Exchange Studies (Computer Science) - The University of Connecticut \hfill Jan 2018 - May 2018
+%	\item Thesis: \textit{Software-Level Implementation of Quantum Finite Automata}
+\end{itemize}
 Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Graduated 2015\\
 \end{degrees}
-%\textbf{The University Edinburgh}\hfill Edinburgh, Scotland, United Kingdom\\
+
+%\textbf{The University of Connecticut}\hfill Storrs, CT, United States\\
 %\begin {degrees}
-%Exchange Studies (Informatics) \hfill Sep 2019 - Dec 2019\\
+%Exchange Studies (Computer Science) \hfill Jan 2018 - May 2018\\
 %\end{degrees}
-\textbf{The University of Connecticut}\hfill Storrs, CT, United States\\
-\begin {degrees}
-Exchange Studies (Computer Science) \hfill Jan 2018 - May 2018\\
-\end{degrees}
+
 %\vspace{1mm}
 
 %==== Experience ====%
@@ -110,15 +116,16 @@ Exchange Studies (Computer Science) \hfill Jan 2018 - May 2018\\
 \textit{Research Assistant} \hfill Jun 2018 - Present\\
 \begin{myitemize} \itemsep 0.5mm
 	\item Contributed to the development of \href{https://github.com/CoEDL/elpis}{Elpis}, abstracting away the complexity of the Kaldi automatic speech recognition (ASR) library. Our team took a CLI toolkit and developed a GUI using React and Flask.
-	\item Developed resource creation software for the Ngukurr OPIE Social Robot Project (see Hermes, below). 
+%	\item Developed resource creation software for the Ngukurr OPIE Social Robot Project (see Hermes, below). 
 \end{myitemize}
 
-\textbf{The University of Queensland - Faculty of Engineering, Architecture \& IT} \hfill Brisbane, QLD\\
+\textbf{The University of Queensland - School of IT \& Electrical Engineering} \hfill Brisbane, QLD\\
 \textit{Teaching Assistant} \hfill Jul 2018 - Present\\
 \vspace{-0.5mm}
 \begin{myitemize} \itemsep 0.5mm
-	\item Ran practical learning sessions and marked assessment for the course \textit{Computer Systems Principles and Programming} (CSSE2310),  where students learn systems programming in C, and the fundamentals of Unix operating systems.
-	\item Led tutorials, supervised practicals and developed learning material for the course \textit{Programming in the Large} (CSSE2002), where students are taught Java, object-oriented programming, and the fundamentals of GUI development.
+	\item \textit{Voyages in Language Technologies} (COMP3001): taught computational linguistics and helped prepare course material.
+	\item \textit{Computer Systems Principles and Programming} (CSSE2310): taught students systems programming in C and Unix.
+	\item \textit{Programming in the Large} (CSSE2002): taught Java/OO programming and developed course teaching materials.
 %	\item Responsible for teams of first-year engineering students taking the course \textit{Engineering Modelling and Problem Solving} (ENGG1200), in which they utilise industry tools including CREO and Matlab to design, build and test a model UAV.
 \end{myitemize}
 
@@ -165,6 +172,11 @@ Exchange Studies (Computer Science) \hfill Jan 2018 - May 2018\\
 	\item Part of a team developing a framework and GUI for automatic speech recognition using the Kaldi ASR library.
 \end{singleitem}
 
+\textbf{SlackBlocks - Slack API Wrapper \& PyPI Package} \hfill \textbf{\href{https://github.com/nicklambourne/slackblocks}{github.com/nicklambourne/slackblocks}}
+\begin{singleitem}
+	\item A Python library, published on PyPI, for back-porting the Slack Blocks API to earlier versions of the Slack client.
+\end{singleitem}
+
 \textbf{{Hermes - The Language Resource Creator}} \hfill \textbf{\href{https://github.com/CoEDL/hermes}{github.com/CoEDL/hermes}}
 \begin{singleitem}
 	\item Developed a cross-platform Python/Qt application for creating language resources from linguistic analysis files.
@@ -175,20 +187,17 @@ Exchange Studies (Computer Science) \hfill Jan 2018 - May 2018\\
 %	\item Personal website built using NodeJS, ExpressJS and MongoDB with an automated build pipeline and Jenkins for CI/CD.
 %\end{singleitem}
 
-\textbf{UQCSbot} \hfill \textbf{\href{https://github.com/UQComputingSociety/uqcsbot}{github.com/UQComputingSociety/uqcsbot}}
+\textbf{UQCSbot - A Python-Based, Extensible Slack Bot} \hfill \textbf{\href{https://github.com/UQComputingSociety/uqcsbot}{github.com/UQComputingSociety/uqcsbot}}
 \begin{singleitem}
 	\item Contributed new Python scripts, script overhauls, and code reviews to my university computing society's Slack bot.
 \end{singleitem}
 
-\textbf{SlackBlocks} \hfill \textbf{\href{https://github.com/nicklambourne/slackblocks}{github.com/nicklambourne/slackblocks}}
-\begin{singleitem}
-	\item A Python library, published on PyPI, for back-porting the Slack Blocks API to earlier versions of the Slack client.
-\end{singleitem}
 
-\textbf{LED Billboard Rotation System} \hfill \textbf{(closed source)}
-\begin{singleitem}
-	\item Python system for controlling the rotation of large-format LED billboards including GUI and concurrency features.
-\end{singleitem}
+
+%\textbf{LED Billboard Rotation System} \hfill \textbf{(closed source)}
+%\begin{singleitem}
+%	\item Python system for controlling the rotation of large-format LED billboards including GUI and concurrency features.
+%\end{singleitem}
 
 \vspace{1mm}
 
@@ -212,12 +221,12 @@ Exchange Studies (Computer Science) \hfill Jan 2018 - May 2018\\
 \vspace{1mm}
 
 \header{Scholarships, Grants \& Prizes}
-\textbf{UQ IdeaHub San Francisco Startup Adventure Participant} \hfill The University of Queensland (2019)\\
-\textbf{UQ Summer Research Scholarship} \hfill The University of Queensland (2019)\\
-\textbf{UQ Advantage Grant (CoEDL Summer School)} \hfill The University of Queensland (2018)\\
-\textbf{UQ Winter Research Scholarship} \hfill The University of Queensland (2018)\\
+\textbf{UQ IdeaHub San Francisco Startup Adventure Participant} \hfill (2019)\\
+\textbf{UQ Summer Research Scholarship} \hfill (2019)\\
+\textbf{UQ Advantage Grant (CoEDL Summer School)} \hfill (2018)\\
+\textbf{UQ Winter Research Scholarship} \hfill (2018)\\
 %\textbf{University of Connecticut Innovation Quest - Finalist} \hfill The University of Connecticut (2018)\\
-\textbf{UQ Abroad Travel Grant (University of Connecticut)} \hfill The University of Queensland (2018)\\
+\textbf{UQ Abroad Travel Grant (University of Connecticut)} \hfill (2018)\\
 %\textbf{Dean\textquotesingle{}s Commendation for Academic Achievement} \hfill The University of Queensland (2011)\\
 
 
