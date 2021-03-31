@@ -5,7 +5,7 @@
     \usepackage{textcomp}
     \usepackage[utf8]{inputenc}
     \usepackage[T1]{fontenc}
-    \usepackage[top=3cm, bottom=0.5cm, left=1.6cm, right=1.5cm]{geometry}
+    \usepackage[top=3cm, bottom=0.1cm, left=1.6cm, right=1.5cm]{geometry}
     \usepackage[hidelinks]{hyperref}
     \textheight=10in
     \pagestyle{empty}
@@ -77,7 +77,7 @@
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\vspace*{-75pt}
+\vspace*{-70pt}
 
 %==== Profile ====%
 \begin{center}
@@ -85,7 +85,7 @@
 	Brisbane QLD, Australia $\cdot$ \href{mailto:nick@ndl.im}{nick@ndl.im} $\cdot$ \href{tel:61407980730}{+61 407 980 730} $\cdot$ \href{https://ndl.im}{ndl.im}\\
 \end{center}
 
-\vspace{-1mm}
+\vspace{-2mm}
 
 %==== Education ====%
 \header{Education}
@@ -96,13 +96,13 @@
 \textbf{\href{https://uq.edu.au/}{The University of Queensland}}\hfill Brisbane, QLD, Australia\\
 \begin {degrees}
 Bachelor of Science (Computer Science) \hfill Graduated 2020\\
-\begin{itemize}[noitemsep,topsep=0pt]
-	\setlength{\itemsep}{0pt}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}
-	\item Exchange Studies (Computer Science) - The University of Connecticut \hfill Jan 2018 - May 2018
-%	\item Thesis: \textit{Software-Level Implementation of Quantum Finite Automata}
-\end{itemize}
+%\begin{itemize}[noitemsep,topsep=0pt]
+%	\setlength{\itemsep}{0pt}
+%    \setlength{\parskip}{0pt}
+%    \setlength{\parsep}{0pt}
+%	%\item Exchange Studies (Computer Science) - The University of Connecticut \hfill Jan 2018 - May 2018
+%%	\item Thesis: \textit{Software-Level Implementation of Quantum Finite Automata}
+%\end{itemize}
 Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Graduated 2015\\
 \end{degrees}
 
@@ -114,14 +114,22 @@ Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Gradua
 %\vspace{1mm}
 
 %==== Experience ====%
-\vspace{2mm}
+\vspace{1mm}
 \header{Experience}
 
-\textbf{\href{https://www.atlassian.com/}{Atlassian}} \hfill Sydney, NSW\\
-\textit{Site Reliability Engineering Intern} \hfill Nov 2020 - Present \\
-\begin{myitemize}
-	\item Attached to the Platform SRE team, I am currently working on various full stack (PostgresSQL, Java, Spring, TypeScript) projects related to the reporting of service level objective (SLO) performance to internal teams.
+\textbf{\href{https://www.canva.com/}{Canva}} \hfill Sydney, NSW\\
+\textit{Software Engineer} \hfill Feb 2021 - Present\\
+\begin{myitemize} \itemsep 0.5mm
+	\item Newly attached to the Platform \& Tools team of the Data Engineering group working to maintain Canva's data lake, associated workflows, and the hosted notebooks platform that facilitates ML development within the company.
 \end{myitemize}
+\vspace{-1mm}
+\textit{Software Engineering Intern} \hfill Dec 2019 - Feb 2020\\
+\begin{myitemize} \itemsep 0.5mm
+	\item As part of the infrastructure team, built a shell script transpiler framework and reference generator targeting Python 3.
+	\item Created an interactive playground, using Python, Flask and React, allowing for real-time transpilation in the browser.
+\end{myitemize}
+
+%\vspace{-0.5mm}
 
 \textbf{\href{https://www.itee.uq.edu.au/}{The University of Queensland - School of IT \& Electrical Engineering}} \hfill Brisbane, QLD\\
 \textit{Research Assistant} \hfill Jun 2018 - Present\\
@@ -129,6 +137,7 @@ Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Gradua
 	\item Contributed to the development of \href{https://github.com/CoEDL/elpis}{Elpis}, abstracting away the complexity of the Kaldi automatic speech recognition (ASR) library. Our team took a CLI toolkit and developed an abstraction layer and GUI using React and Flask.
 %	\item Developed resource creation software for the Ngukurr OPIE Social Robot Project (see Hermes, below). 
 \end{myitemize}
+\vspace{-1mm}
 \textit{Teaching Assistant} \hfill Jul 2018 - December 2020\\
 \vspace{-0.5mm}
 \begin{myitemize} \itemsep 0.5mm
@@ -147,12 +156,16 @@ Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Gradua
 %	\item Responsible for teams of first-year engineering students taking the course \textit{Engineering Modelling and Problem Solving} (ENGG1200), in which they utilise industry tools including CREO and Matlab to design, build and test a model UAV.
 \end{myitemize}
 
-\textbf{\href{https://www.canva.com/}{Canva}} \hfill Sydney, NSW\\
-\textit{Software Engineering Intern} \hfill Dec 2019 - Feb 2020\\
-\begin{myitemize} \itemsep 0.5mm
-	\item As part of the infrastructure team, built a shell script transpiler framework and reference generator targeting Python 3.
-	\item Created an interactive playground, using Python, Flask and React, allowing for real-time transpilation in the browser.
+%\vspace{-0.5mm}
+
+\textbf{\href{https://www.atlassian.com/}{Atlassian}} \hfill Sydney, NSW\\
+\textit{Site Reliability Engineering Intern} \hfill Nov 2020 - Feb 2021 \\
+\begin{myitemize}
+	\item Attached to the Platform SRE team, I am worked on various full stack (PostgresSQL, Java, Spring, TypeScript) projects related to the reporting of service level objective (SLO) performance to internal teams.
 \end{myitemize}
+
+
+\vspace{-0.5mm}
 
 \textbf{\href{https://www.patchdmedical.com/}{Patchd, Inc.}} \hfill San Francisco, CA\\
 \textit{Software Engineering Intern} \hfill  Jan 2019 - Feb 2019\\
@@ -160,6 +173,7 @@ Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Gradua
 %	\item Patchd is a Y-Combinator backed startup working on the detection of sepsis from vital sign data using machine learning.
 	\item Worked on parallelisation strategies for training recurrent neural nets in the detection of sepsis from vital sign data.
 \end{myitemize}
+
 %\textbf{ADLED Pty. Ltd. \& SS Signs} \hfill Cleveland, QLD\\
 %\textit{Technical Advisor} \hfill Oct 2015 - Dec 2017\\
 %\vspace{-0.5mm}
@@ -168,9 +182,9 @@ Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Gradua
 %	\item Compiled financial reports and worked with industry groups to lobby local governments on legislative issues.
 %\end{myitemize}
 
-\vspace{0.5mm}
+\vspace{-0.5mm}
 \header{Skills}
-\vspace{1.5mm}
+\vspace{1mm}
 \begin{tabular}{p{0.12\linewidth}p{0.83\linewidth}}
 	\textbf{Languages:} & Python, Java, C, TypeScript/JavaScript, SQL, HTML/CSS, \LaTeX \\
 %	\small Encountered: & \small MATLAB, Ruby, AVR Assembly, SML, Smalltalk, Prolog\\
@@ -180,7 +194,7 @@ Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Gradua
 	\textbf{Tools:} & Web Frameworks (Flask, Django, ExpressJS), SQL DBs (PostgreSQL, MySQL), NoSQL (Mongo), CI/CD (Jenkins, Travis), Cloud Platforms, Containerisation (Docker)
 \end{tabular}
 
-\vspace{1mm}
+\vspace{mm}
 
 \header{Projects}
 
@@ -216,7 +230,7 @@ Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Gradua
 %	\item Python system for controlling the rotation of large-format LED billboards including GUI and concurrency features.
 %\end{singleitem}
 
-\vspace{0.8mm}
+\vspace{0mm}
 
 \header{Volunteering}
 \textbf{\href{https://uqcs.org}{University of Queensland Computing Society}} \hfill 2015 - Present\\
@@ -228,7 +242,7 @@ Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Gradua
 	\item Returned to manage the events portfolio as part of the 2020 executive committee, organising more than 50 events.
 	\item In 2020 I was named an honorary life member in recognition of extraordinary contributions to the society.
 \end{singleitem}
-\textbf{\href{https://www.nodegirls.com/}{Node Girls}, \href{https://djangogirls.org/}{Django Girls}, \& \href{https://robogalsbrisbane.org/}{Robogals} (Brisbane Chapters)} \hfill 2016 - Present\\
+\textbf{\href{https://www.nodegirls.com/}{Node Girls}, \href{https://djangogirls.org/}{Django Girls}, \& \href{https://robogalsbrisbane.org/}{Robogals} (Brisbane Chapters)} \hfill 2016 - 2020\\
 \begin{singleitem}
 	\item Provided mentorship in web and robotics technologies in an effort to increase female representation in technology.
 \end{singleitem}
@@ -237,10 +251,10 @@ Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Gradua
 %	\item Participated as a student volunteer assisting with conference organisation and preparation.
 %\end{singleitem}
 
-\vspace{0.8mm}
+\vspace{0mm}
 
 \header{Scholarships, Grants \& Prizes}
-\textbf{\href{https://www.eait.uq.edu.au/eait-scholars-program}{UQ Faculty of Engineering, Architecture \& IT - Hawken Scholar}}\hfill (2020)\\
+\textbf{\href{https://www.eait.uq.edu.au/eait-scholars-program}{UQ Faculty of Engineering, Architecture \& IT Hawken Scholar}}\hfill (2020)\\
 \textbf{\href{https://ventures.uq.edu.au/san-fran}{UQ IdeaHub San Francisco Startup Adventure Participant}} \hfill (2019)\\
 \textbf{\href{https://employability.uq.edu.au/summer-winter-research}{UQ Summer Research Scholarship}} \hfill (2019)\\
 \textbf{\href{https://employability.uq.edu.au/financial-support/employability-grant}{UQ Advantage Grant} (\href{http://www.dynamicsoflanguage.edu.au/education-and-outreach/train-with-us/summer-school-2018/}{CoEDL Summer School})} \hfill (2018)\\
@@ -250,7 +264,7 @@ Bachelor of Commerce (Finance) \& Bachelor of Science (Psychology) \hfill Gradua
 %\textbf{Dean\textquotesingle{}s Commendation for Academic Achievement} \hfill The University of Queensland (2011)\\
 
 
-\vspace{3mm}
+\vspace{1.5mm}
 \begin{center}
 \small \textit{References available upon request}
 \end{center}
